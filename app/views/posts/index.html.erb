@@ -1,1 +1,11 @@
 <h1> Blog Me</h1>
+<br />
+
+<% @posts.each do |post| %>
+  <div>
+    <h1><%= post.title %></h1><br />
+    <i>Author: <%= post.author %></i><br />
+    <p><%= post.post %></p><br />
+  </div>
+
+  <%end%>
